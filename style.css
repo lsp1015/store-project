@@ -1,0 +1,96 @@
+body {
+    background-color:rgb(252, 247, 240);
+}
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+    z-index:10;
+}
+/* Styling the space of each item  */
+nav li {
+    display:flex;
+    margin:0;
+    list-style:none;
+    min-width:200px;
+    flex:1;
+    text-align:center;
+    background-color: mediumslateblue;
+    color:cornsilk;
+    position:relative;
+}
+/* Styling the link, both unvisited and visited*/
+nav a, a:visited {
+    width:100%;
+    text-decoration:none;
+    padding: 8px 0px;
+    color:antiquewhite;
+}
+
+/*Hovering over a link AND the link that has class=active (the same page)*/
+nav a:hover, a.active {
+    color:cornsilk;
+    background-color:rgb(88, 66, 214);
+}
+.dropdown-content {
+    position: absolute;
+    width:100%;
+    display:none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    font-weight: bold;
+}
+.img {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color:rgb(88, 66, 214);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: lavender;
+}
+.card {
+    width:220px;
+    min-height:280px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 55px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.picture {
+    width:220px;
+    height:280px;
+
+}
+.picture-section {
+    height: 30px;
+    position: relative;
+    background-color: lavender;
+}
+.picwords {
+    color: darkslateblue;
+    font-weight: bold;
+}
+.prod {
+    justify-content: space-evenly
+}
+h3, h4, h2, h5 {
+    text-align: center;
+    color: rgb(58, 2, 83)
+}
+p {
+    text-align: center;
+
+}
